@@ -1,0 +1,15 @@
+# Likely Need Changing
+yolo_dir: /Users/charlieturner/yolov5                            # installation directory of yolov5
+python  : python                              # path to python executable
+img_path: /Users/charlieturner/yolov5/BoatData                   # Imgs will be saved and deleted here
+weights : ./best.pt                           # yolov5 weights file
+api_key : ENV                                 # If 'ENV', use env file
+tif_dir : /Users/charlieturner/Documents/CountingBoats/Rawimages # directory with tif files (or to save tif files)
+OUTFILE: test
+# Configuration
+CONF_THRESHOLD                  : 0.5
+STAT_DISTANCE_CUTOFF_PIX        : 6
+MOVING_DISTANCE_CUTOFF_PIX      : 10
+STAT_DISTANCE_CUTOFF_LATLONG    : 0.00025
+MOVING_DISTANCE_CUTOFF_LATLONG  : 0.0003
+
