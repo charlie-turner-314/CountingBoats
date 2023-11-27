@@ -5,6 +5,7 @@ img_path: /Users/charlieturner/yolov5/BoatData                   # Imgs will be 
 weights : ./best.pt                           # yolov5 weights file
 planet:
   api_key : ENV                                 # If 'ENV', use env file
+  polygons: /Users/charlieturner/Documents/CountingBoats/Polygons 
 tif_dir : /Users/charlieturner/Documents/CountingBoats/Rawimages # directory with tif files (or to save tif files)
 OUTFILE: test
 # Configuration
