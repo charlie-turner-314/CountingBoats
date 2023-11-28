@@ -7,7 +7,7 @@ planet:
   api_key : ENV                                       # If 'ENV', use env file
   polygons: /Users/charlieturner/Documents/CountingBoats/Polygons 
 tif_dir : /Users/charlieturner/Documents/CountingBoats/Rawimages # directory with tif files (or to save tif files)
-OUTFILE: test
+OUTFILE: boats
 # Configuration
 CONFIDENCE_THRESHOLD            : 0.5
 STAT_DISTANCE_CUTOFF_PIX        : 6
