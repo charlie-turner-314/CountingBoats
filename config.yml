@@ -1,10 +1,10 @@
 # Likely Need Changing
-yolo_dir: /Users/charlieturner/yolov5                            # installation directory of yolov5
-python  : python                              # path to python executable
-img_path: /Users/charlieturner/yolov5/BoatData                   # Imgs will be saved and deleted here
-weights : ./best.pt                           # yolov5 weights file
+yolo_dir: /Users/charlieturner/yolov5                 # installation directory of yolov5
+python  : python                                      # path to python executable
+img_path: /Users/charlieturner/yolov5/BoatData        # Imgs will be saved and deleted here
+weights : ./best_weights.pt                           # yolov5 weights file
 planet:
-  api_key : ENV                                 # If 'ENV', use env file
+  api_key : ENV                                       # If 'ENV', use env file
   polygons: /Users/charlieturner/Documents/CountingBoats/Polygons 
 tif_dir : /Users/charlieturner/Documents/CountingBoats/Rawimages # directory with tif files (or to save tif files)
 OUTFILE: test
