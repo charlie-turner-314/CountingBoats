@@ -19,7 +19,7 @@ STAT_DISTANCE_CUTOFF_LATLONG    : 0.00025
 MOVING_DISTANCE_CUTOFF_LATLONG  : 0.0003
 
 # Automation Configuration
-ALLOWABLE_CLOUD_COVER           : 0.1     # Fraction of image which can be covered by clouds
+ALLOWED_CLOUD_COVER             : 0.1     # Fraction of image which can be covered by clouds
 MINIMUM_AREA_COVERAGE           : 0       # Fraction of interest area which must be present to download
-HISTORY_LENGTH                  : 14      # Days in the past to try to fetch (new) imagery for
+HISTORY_LENGTH                  : 28      # Days in the past to try to fetch (new) imagery for 
 
