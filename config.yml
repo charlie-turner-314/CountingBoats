@@ -1,13 +1,14 @@
 # Likely Need Changing
-yolo_dir : C:\yolov5-master                             # installation directory of yolov5
-python   : C:\Users\turner30\AppData\Local\Programs\Python\Python38\python # path to python executable (probably just 'python')
-img_path : $(yolo_dir)/BoatData                         # Imgs will be saved and deleted here
-proj_root: C:\CountingBoats                             # root of project (where this file is)
-weights  : ./data/NN_weights.pt                         # yolov5 weights file
-planet :
-  api_key  : ENV                                        # If 'ENV', use env file (so doesn't go to version control)
+# yolo_dir : C:\yolov5-master                             # installation directory of yolov5
+# python   : C:\Users\turner30\AppData\Local\Programs\Python\Python38\python # path to python executable (probably just 'python')
+yolo_dir  : /Users/charlieturner/yolov5
+python    : python
+proj_root : C:\CountingBoats                             # root of project (where this file is)
+weights   : ./data/NN_weights.pt                         # yolov5 weights file
+planet:
+  api_key   : ENV                                        # If 'ENV', use env file (so doesn't go to version control)
     # If api_key is 'ENV', there must be a '.env' file in the same directory as this file with PLANET_API_KEY={your_api_key}
-OUTFILE : boat_counts # output file name (excluding extension)
+OUTFILE   : boat_counts # output file name (excluding extension)
 
 # Technical Configuration
 CONFIDENCE_THRESHOLD            : 0.5     
