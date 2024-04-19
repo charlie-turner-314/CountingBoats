@@ -3,14 +3,19 @@
 # python   : C:\Users\turner30\AppData\Local\Programs\Python\Python38\python # path to python executable (probably just 'python')
 yolo_dir  : /Users/charlieturner/yolov5
 python    : python
-proj_root : C:\CountingBoats                             # root of project (where this file is)
-weights   : ./data/NN_weights.pt                         # yolov5 weights file
+# proj_root : C:\CountingBoats                            # root of project (where this file is)
+proj_root : /Users/charlieturner/Documents/CountingBoats                             # root of project (where this file is)
+weights   : ./data/NN_weights.pt                          # yolov5 weights file
 planet:
-  api_key   : ENV                                        # If 'ENV', use env file (so doesn't go to version control)
+  api_key   : ENV                                         # If 'ENV', use env file (so doesn't go to version control)
     # If api_key is 'ENV', there must be a '.env' file in the same directory as this file with PLANET_API_KEY={your_api_key}
-OUTFILE   : boat_counts # output file name (excluding extension)
+FILE_ID   : test                                          # output file prefix (change to something unique if you don't want to collate historical results)
 
 # Technical Configuration
+TILE_SIZE                       : 832 # Size of tiles to split images into for processing
+                                          # I do beleive YOLO will resize images to work, but this should be the same as the YOLO model expects for best results
+STRIDE                          : 208     # Stride for overlapping tiles
+
 CONFIDENCE_THRESHOLD            : 0.5     
 STAT_DISTANCE_CUTOFF_PIX        : 6
 MOVING_DISTANCE_CUTOFF_PIX      : 10
