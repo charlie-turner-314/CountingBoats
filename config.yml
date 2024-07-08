@@ -29,8 +29,8 @@ MOVING_DISTANCE_CUTOFF_LATLONG: 0.0003
 
 # Automation Configuration
 AUTO_MODE: "batch" # 'batch' or 'single' - whether to run in batch mode or all history at once
-HISTORY_LENGTH: 15 # Days in the past to fetch (new) imagery for
-BATCH_SIZE: 3 # Number of days to process fully (order -> download -> infer) before moving on to next batch
+HISTORY_LENGTH: 7 # Days in the past to fetch (new) imagery for
+BATCH_SIZE: 2 # Number of days to process fully (order -> download -> infer) before moving on to next batch
 
 ALLOWED_CLOUD_COVER: 0.5 # Fraction of image which can be covered by clouds
 MINIMUM_AREA_COVERAGE: 0 # Fraction of interest area which must be present to download
