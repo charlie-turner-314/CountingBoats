@@ -29,10 +29,13 @@ MOVING_DISTANCE_CUTOFF_LATLONG: 0.0003
 
 # Automation Configuration
 AUTO_MODE: "batch" # 'batch' or 'single' - whether to run in batch mode or all history at once
-HISTORY_LENGTH: 7 # Days in the past to fetch (new) imagery for
-BATCH_SIZE: 2 # Number of days to process fully (order -> download -> infer) before moving on to next batch
+HISTORY_LENGTH: 60 # Days in the past to fetch (new) imagery for
+# OR (HISTORY_LENGTH takes precedence):
+# START_DATE: "2024-06-01" # Date to start fetching imagery from
+# END_DATE: "2024-06-20" # Date to stop fetching imagery from
+BATCH_SIZE: 10 # Number of days to process (order -> download -> infer) before moving on to next batch
 
-ALLOWED_CLOUD_COVER: 0.5 # Fraction of image which can be covered by clouds
+ALLOWED_CLOUD_COVER: 0.75 # Fraction of image which can be covered by clouds
 MINIMUM_AREA_COVERAGE: 0 # Fraction of interest area which must be present to download
 AOIS: "peel" # Specific AOIs to fetch imagery for (comma separated names of polygons) or "all" for all AOIs in data/polygons
 
