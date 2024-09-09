@@ -12,6 +12,7 @@ planet:
 output_dir: ./results
 tif_dir: .\images\RawImages
 download_dir: .\images\downloads
+archive_dir: "U:\\Research\\Projects\\sef\\livingplayingmb\\Boat Detection TMBF\\PlanetArchive"
 
 # Technical Configuration
 # Size of tiles to split images into for processing
