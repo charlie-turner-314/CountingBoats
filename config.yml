@@ -9,9 +9,9 @@ planet:
   api_key:
     ENV # If 'ENV', use env file (so doesn't go to version control)
     # If api_key is 'ENV', there must be a '.env' file in the same directory as this file with PLANET_API_KEY={your_api_key}
-output_dir: ./results
-tif_dir: .\images\RawImages
-download_dir: .\images\downloads
+output_dir: ./testmemory
+tif_dir: images\RawImages
+download_dir: images\downloads
 archive_dir: "U:\\Research\\Projects\\sef\\livingplayingmb\\Boat Detection TMBF\\PlanetArchive"
 
 # Technical Configuration
@@ -34,9 +34,9 @@ MOVING_DISTANCE_CUTOFF_LATLONG: 0.0003
 AUTO_MODE: "batch" # 'batch' or 'single' - whether to run in batch mode or all history at once
 # HISTORY_LENGTH: 3 # Days in the past to fetch (new) imagery for
 # OR (HISTORY_LENGTH takes precedence):
-START_DATE: "2016-07-01" # Date to start fetching imagery from YYYY-MM-DD
-END_DATE: "2019-07-01" # Date to stop fetching imagery from YYYY-MM-DD
-BATCH_SIZE: 7 # Number of days to process (order -> download -> infer) before moving on to next batch
+START_DATE: "2018-07-15" # Date to start fetching imagery from YYYY-MM-DD
+END_DATE: "2018-07-18" # Date to stop fetching imagery from YYYY-MM-DD
+BATCH_SIZE: 1 # Number of days to process (order -> download -> infer) before moving on to next batch
 
 ALLOWED_CLOUD_COVER: 0.8 # Fraction of image which can be covered by clouds and still be added to day's composite
 MINIMUM_AREA_COVERAGE: 0.0 # Fraction of interest area which must be present to download
